@@ -1,0 +1,106 @@
+{
+    "noir" : [
+     {
+       "forme": "débardeur",
+       "couleur": "Noir",
+       "prix": 14.99,
+       "img": "../img/BN.jpg"
+     },
+     {
+       "forme": "manche_longue",
+       "couleur": "Noir",
+       "prix": 24.99,
+       "img": "../img/NBL.jpg"
+     },
+     {
+       "forme": "manche_courte",
+       "couleur": "Noir",
+       "prix": 19.99,
+       "img": "../img/TCN.jpg"
+     }
+     ],
+
+   "blanc" : [
+     {
+       "forme": "débardeur",
+       "couleur": "Blanc",
+       "prix": 14.99,
+       "img": "../img/DB.jpg"
+     },
+     {
+       "forme": "manche_longue",
+       "couleur": "Blanc",
+       "prix": 24.99,
+       "img": "../img/BLM.jpg"
+     },
+     {
+       "forme": "manche_courte",
+       "couleur": "Blanc",
+       "prix": 19.99,
+       "img": "../img/TCBlanc.jpg"
+     }
+     ],
+     "gris" : [
+        {
+          "forme": "débardeur",
+          "couleur": "Gris",
+          "prix": 14.99,
+          "img": "../img/DG.jpg"
+        },
+        {
+          "forme": "manche_longue",
+          "couleur": "Gris",
+          "prix": 24.99,
+          "img": "../img/GLM.jpg"
+        },
+        {
+          "forme": "manche_courte",
+          "couleur": "Gris",
+          "prix": 19.99,
+          "img": "../img/TCG.jpg"
+        }
+        ],
+    
+        "rouge" : [
+            {
+              "forme": "débardeur",
+              "couleur": "rouge",
+              "prix": 14.99,
+              "img": "../img/DR.jpg"
+            },
+            {
+              "forme": "manche_longue",
+              "couleur": "rouge",
+              "prix": 24.99,
+              "img": "../img/RBL.jpg"
+            },
+            {
+              "forme": "manche_courte",
+              "couleur": "rouge",
+              "prix": 19.99,
+              "img": "../img/TCR.jpg"
+            }
+            ],
+
+            "bleu" : [
+                {
+                  "forme": "débardeur",
+                  "couleur": "bleu",
+                  "prix": 14.99,
+                  "img": "../img/DBLU.jpg"
+                },
+                {
+                  "forme": "manche_longue",
+                  "couleur": "bleu",
+                  "prix": 24.99,
+                  "img": "../img/bleuML.jpg"
+                },
+                {
+                  "forme": "manche_courte",
+                  "couleur": "bleu",
+                  "prix": 19.99,
+                  "img": "../img/TCB.jpg"
+                }
+                ]
+        
+ }

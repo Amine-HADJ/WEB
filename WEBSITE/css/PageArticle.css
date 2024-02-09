@@ -1,0 +1,77 @@
+body{
+    background-color: cornflowerblue;
+    margin: 0;
+  }
+
+.produits{
+    display: flex;
+
+}
+
+img {
+    width: 265px;
+    height: 265px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.alignement{
+    display: flex;
+    align-items:flex-start;
+}
+
+.panier{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    border-style: dotted;
+    background-color: floralwhite;
+    height: 250px;
+    width: 200px;
+
+
+}
+
+.titre1{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px; 
+    text-align: center;
+    color: rgb(36, 6, 64);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+.article{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.choix{
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h,
+.m,
+.croix{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.canvas{
+    height: 255px;
+    width: 255px;
+    margin-right: 20px;
+    margin-left: 20px;
+}

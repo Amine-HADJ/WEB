@@ -1,0 +1,25 @@
+
+.localisation h2{
+    text-align: start;
+
+}
+.localisation img{
+    width: 400px;
+}
+
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.position{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+h2{
+    display: flex;
+    justify-content:left;
+}

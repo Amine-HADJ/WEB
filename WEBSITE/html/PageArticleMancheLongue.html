@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <link rel="stylesheet" href="../css/PageArticle.css">
+        <link rel="stylesheet" href="../css/entete.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/menunavigation.css">
+        <link rel="stylesheet" href="../css/retour_sommet.css">
+        <link rel="preconnect" href="https://fonts.goggleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+            rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> M&H.SHOP - T-shirt Manches Longues</title>
+        <script src="../js/PageArticleMancheLongue.js" defer></script>
+        <script src="../js/header.js" defer></script>
+        <script src="../js/footer.js" defer></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" defer></script>
+        <script src="../js/retour_sommet.js" defer></script>
+        <script src="../js/panier.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+
+            </div>
+        </header>
+        <br><br>
+        <h1 class="titre1" id="titre1">Manche longue Blanc</h1>
+        <div id="item" class="item">
+            <div class="produits">
+
+                <div class="article article-rouge" id="RBL">
+                    <img src="../img/RBL.jpg" id="image">
+                </div>
+                <div class="article article-blanc" id="BML">
+                    <img src="../img/BLM.jpg" id="image">
+                </div>
+                <div class="article article-bleu" id="BBML">
+                    <img src="../img/BleuML.jpg" id="image" >
+                </div>
+                <div  class="article article-gris" id="GLM">
+                    <img src="../img/GLM.jpg" id="image">
+                </div>
+                <div class="article article-noir" id="NLM">
+                    <img src="../img/NBL.jpg" id="image">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="perso" class="perso"> 
+                <canvas class="canvas" id="canvas" >
+        
+                </canvas>
+    
+              
+    
+            </div> 
+            <br>
+            <br>    
+
+        
+            <form class="container">
+            <div class="panier" id="panier">
+
+                <div class="alignement"> Prix : <div id="prix_objet">24,99</div>€ </div>
+                <br>
+                <img class="croix" id="croix" src="../img/croix.jpg"><img class="h" id="h" src="../img/H.png"><img id="m" class="m" src="../img/M2.png">
+
+
+                <div>Taille:
+                    <select placeholder="votre taille" name="size" id="taille">
+                        
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+
+                </div>
+                <div>Quantité :
+                        <i>A partir de 10 articles similaires achetés bénéficiez d'une réduction de 10% sur ce même article!</i>
+                        <fieldset>
+                                <input type="number" name="quantité" min="1" id="qte_panier" >
+                        </fieldset>
+               
+
+                    <div>
+                        <button onclick="ajout_Panier()" id="ajout">Ajouter au panier</button><br><br>
+                    </div>
+            </div>
+            </div>
+        </div>
+           
+        </form>
+
+        <div class="scrollUp "id="scrollUp">
+            <a href="#top"><img src="../img/to_top.png"/></a>
+        </div>
+
+        <div id="choix" class="choix">
+            <h2 id="A">Cliquer sur la couleur de votre choix</h2>
+            <h3 id="B">Ils sont tous à 24,99 euros</h3>
+        </div>        
+
+        <footer>
+            <div class="contenue-footer">
+                
+            </div>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <link rel="stylesheet" href="../css/PagePanier.css">
+        <link rel="stylesheet" href="../css/entete.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/menunavigation.css">
+        <link rel="stylesheet" href="../css/retour_sommet.css">
+        <link rel="preconnect" href="https://fonts.goggleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+            rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> M&H.SHOP - Panier</title>
+        <script src="../js/header.js" defer></script>
+        <script src="../js/footer.js" defer></script>
+        <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"
+            defer></script>
+        <script src="../js/retour_sommet.js" defer></script>
+        <script src="../js/panier.js" defer></script>
+    </head>
+
+    <body onload="temp();prix_sous_total()">
+        <header>
+            <div class="header">
+
+            </div>
+        </header>
+        <br><br>
+        <h1>Mon Panier</h1>
+        <div class="disposition">
+
+            <div class="section" id="divtemp">
+                <template id="listePanier">
+                    <div class="Article"><h1>Article {{id}}</h1>
+                        <ol>
+                           <!-- <li><img id="imagePanier" src={{photo}}></li>-->
+                            <li>{{nom}} ;</li>
+                            Prix à l'unité: <li id="prix{{id}}">{{prix}}</li>€ ;
+                            <li>Quantité : <input type="number"
+                                    name="quantité_panier" id="qte_panier{{id}}"
+                                    value="1" min="1"
+                                    onchange="prixPanier({id});prix_sous_total()"
+                                    style="width:50px;"></li>
+                            ; Prix : <li id="prixtotal{{id}}">{{prix}}</li>€
+                            <li><button id="supp_item{{id}}"
+                                    onclick="removeItem({id});refreshStorage();location.reload()"
+                                    style="height:auto; width:auto">Enlever le
+                                    produit du panier</button></li>
+                        </ol>
+                    </div>
+    
+                </template>
+            </div>
+
+            <div class=" data">
+                <form id="form">
+                    <fieldset>
+                        <legend>Identité</legend>
+                        <p>Nom: <font color="#FF0000">*</font></p>
+                        <input type="text" id="name" required="required">
+                        <p>Prénom(s): <font color="#FF0000">*</font></p>
+                        <input type="text" id="firstname" required="required">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Coordonnées</legend>
+                        <p>Numéro de téléphone: <font color="#FF0000">*</font></p>
+                        <input type="tel" id="number" inputmode="tel"
+                            required="required">
+                        <p>Email: <font color="#FF0000">*</font></p>
+                        <input type="email" id="email" inputmode="email"
+                            required="required">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informations De Livraison</legend>
+                        <p>Adresse de livraison: <font color="#FF0000">*</font></p>
+                        <input type="text" id="adresse_de_livraison" onkeyup="getAdress()"
+                            required="required">
+                        <p>Code postal: <font color="#FF0000">*</font></p>
+                        <input placeholder="ex: 69008" type="text"
+                            id="code_postal"
+                            name="code_postal" pattern="[0-9]{5}"
+                            inputmode="tel"
+                            required="required">
+                        <p>Code immeuble:</p>
+                        <input type="text" id="code_immeuble"
+                            name="code_immeuble"
+                            pattern="[0-9]{4}">
+                        <p>Date de livraison: <font color="#FF0000">*</font></p>
+                        <input type="date" id="date_de_livraison"
+                            required="required">
+                        <i>Livraison Express en moins de 72h (+8€)</i>
+                        <p>Laisser une indictication au livreur:</p>
+                        <input type="text" id="indications_livraison"
+                            name="indications_livraison" size="50px">
+                    </fieldset>
+                    <br><br>
+                    <i>Les champs marqués d'une <font color="FF0000">'*' </font>doivent
+                        être
+                        obligatoirement renseignés</i>
+                    <br>
+                    <button id="validation" onclick="validate()">Valider mes
+                        informations</button>
+                    <input type="reset" value="Recommencer">
+            </div>   
+            <div class="paiement" id="paiement" >
+                <h2>Sous-Total :</h2>
+                    <li id="prix_sous_total"></li>€
+                    <button onclick=vider()>Vider le panier</button>
+
+
+                    <aside>
+                        <br> Livraison:
+                        <p id="somme_livraison"></p>
+                        <h4 id="prix_total">Total à payer:</h4>
+
+                    </aside>
+                    <button>Passer au paiement</button>
+
+
+                </form>
+            </div>
+            
+        </div>
+            <div class="scrollUp" id="scrollUp">
+                <a href="#top"><img src="../img/to_top.png" alt="scrollUP"></a>
+            </div>
+
+            <footer>
+                <div class="contenue-footer">
+                </div>
+            </footer>
+
+        </html>

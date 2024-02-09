@@ -1,0 +1,51 @@
+body{
+  background-color: cornflowerblue;
+  margin: 0;
+}
+
+.data{
+    font-weight: 50px;
+    border-width: 8px;
+    border-style: groove;
+    border-color:black;
+    margin-left: 5px;
+    width: 750px;
+}
+
+.paiement{
+    font-weight: 50px;
+    border-width: 8px;
+    border-style: groove;
+    border-color:black;
+    margin-left: 5px;
+    width: 500px;
+    height: 830px;
+}
+.section{
+   font-weight: 50px;
+    border-width: 8px;
+    border-style: groove;
+    border-color:black;
+    margin-left: 5px;
+    width: 500px;
+    height: 830px;
+
+}
+
+.disposition{
+  display: flex;
+  align-items: center;
+}
+
+#imagePanier {
+  border: red 2.5px solid;
+  width: auto;
+  height: 130px;
+}
+
+.Article{
+  border: black;
+  background-color: aqua;
+  
+}
+

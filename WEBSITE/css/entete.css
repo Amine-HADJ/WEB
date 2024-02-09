@@ -1,0 +1,28 @@
+.entete {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-style: groove;
+    border-color: brown;
+    border-width: 5px;
+    background-color: rgba(102, 109, 121, 0.784);
+
+}
+
+.entete img {
+    width: 75px;
+    height: 75px;
+    margin-top: 12px;
+}
+
+.entete h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 42px; 
+    text-align: center;
+    color: purple;
+    animation: clignote 6s linear infinite;
+
+}
+@keyframes clignote {  
+    50% { opacity: 0; }
+  }
